@@ -1,0 +1,37 @@
+---
+import Card from '../components/Card.astro';
+---
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+/>
+<div class="main">
+  <Card
+    blogType="Learning"
+    date="Published 21 Dec 2023"
+    title="HTML & CSS foundations"
+    body="These languages are the backbone of every website, defining structure, content, and presentation."
+    author="Greg Hooper"
+  />
+</div>
+
+<style scoped>
+  .main {
+    width: 100vw;
+    height: 100vh;
+    background: #f4d04e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+</style>

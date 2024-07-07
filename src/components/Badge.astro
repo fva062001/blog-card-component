@@ -1,0 +1,26 @@
+---
+type BadgeProps = {
+  color: string;
+  text: string;
+};
+
+const { text } = Astro.props;
+---
+
+<div class="main">
+  {text}
+</div>
+
+<style scoped>
+  .main {
+    width: fit-content;
+    height: fit-content;
+    background: #f4d04e;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-family: 'Figtree', sans-serif;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+</style>

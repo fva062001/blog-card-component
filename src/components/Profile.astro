@@ -1,0 +1,32 @@
+---
+import gregImage from '/public/assets/image-avatar.webp';
+const { author } = Astro.props;
+---
+
+<div class="container">
+  <img
+    src={gregImage.src}
+    alt="Author profile picture"
+  />
+  <p>{author}</p>
+</div>
+
+<style scoped>
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .container p {
+    margin-left: 0.75rem;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    line-height: 150%;
+  }
+</style>
